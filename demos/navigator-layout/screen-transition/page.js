@@ -2,19 +2,14 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Button } from 'tuya-panel-kit';
 
-// eslint-disable-next-line
 export default ({ num, navigator }) => (
   <View style={[styles.container, styles.center]}>
     <Text style={styles.welcomeTxt}>This is Page {num}</Text>
-    <Button
-      style={styles.btnStyle}
-      onPress={() => navigator.pop()}
-    >
+    <Button style={styles.btnStyle} onPress={() => navigator.pop()}>
       <Text style={styles.navTxt}>Click to go back!</Text>
     </Button>
   </View>
 );
-
 
 const styles = StyleSheet.create({
   container: {
@@ -42,5 +37,5 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     fontSize: 12,
     color: '#303A4B',
-  }
+  },
 });

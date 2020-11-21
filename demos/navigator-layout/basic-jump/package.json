@@ -18,7 +18,7 @@
     "react-native": "0.51.0",
     "react-native-deprecated-custom-components": "git+https://github.com/facebookarchive/react-native-custom-components.git#83c4fa19ccc9b6cd48ff80e457c493332819b486",
     "react-native-svg": "5.5.1",
-    "tuya-panel-kit": "^0.0.1"
+    "tuya-panel-kit": "^2.0.0-rc.7"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

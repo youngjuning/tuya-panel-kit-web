@@ -1,27 +1,29 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
-import { NavigatorLayout } from 'tuya-panel-kit';
+import { NavigatorLayout, Theme } from 'tuya-panel-kit';
 import Page from './page';
 import Home from './home';
 
-const routers = [{
-  id: 'page1',
-  title: 'page1',
-  Scene: props => <Page {...props} num={1} />,
-}, {
-  id: 'page2',
-  title: 'page2',
-  Scene: props => <Page {...props} num={2} />,
-}];
+const routers = [
+  {
+    id: 'page1',
+    title: 'page1',
+    Scene: props => <Page {...props} num={1} />,
+  },
+  {
+    id: 'page2',
+    title: 'page2',
+    Scene: props => <Page {...props} num={2} />,
+  },
+];
 
-export default class MainLayout extends NavigatorLayout {
-  // eslint-disable-next-line
+class MainLayout extends NavigatorLayout {
   hookRoute(route) {
     const theRoute = routers.find(r => r.id === route.id);
     return {
       ...route,
       topbarStyle: { backgroundColor: '#ff6024' },
-      showOfflineView: false,
+      topbarTextStyle: { color: '#fff' },
+      showOfflineView: false, // 此处为了基础功能调试才关闭设备离线蒙层，生产环境建议开启
       title: route.id === 'main' ? 'Basic Jump Usage' : theRoute.title,
     };
   }
@@ -32,18 +34,15 @@ export default class MainLayout extends NavigatorLayout {
     const router = routers.find(r => r.id === route.id);
     if (router && router.Scene) {
       const Component = router.Scene;
-      Scene = (
-        <Component
-          navigator={navigator}
-          {...route}
-        />
-      );
+      Scene = <Component navigator={navigator} {...route} />;
     }
 
     return Scene;
   }
 }
 
-
-const styles = StyleSheet.create({
-});
+export default props => (
+  <Theme theme={{}}>
+    <MainLayout {...props} />
+  </Theme>
+);

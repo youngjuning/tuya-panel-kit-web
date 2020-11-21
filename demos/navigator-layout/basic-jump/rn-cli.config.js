@@ -15,17 +15,15 @@ module.exports = {
   },
   getBlacklistRE() {
     return blacklist([
-      new RegExp(
-        `^${escape(path.resolve(__dirname, '..', '..', '..', 'node_modules'))}\\/.*$`
-      ),
+      new RegExp(`^${escape(path.resolve(__dirname, '..', '..', '..', 'node_modules'))}\\/.*$`),
       new RegExp(
         `^${escape(path.resolve(__dirname, '..', '..', '..', 'example', 'node_modules'))}\\/.*$`
       ),
+      new RegExp(`^${escape(path.resolve(__dirname, '..', '..', '..', 'template'))}\\/.*$`),
       new RegExp(
-        `^${escape(path.resolve(__dirname, '..', '..', '..', 'template'))}\\/.*$`
-      ),
-      new RegExp(
-        `^${escape(path.resolve(__dirname, 'node_modules', 'tuya-panel-kit'))}\\/.*\\/node_modules.*$`
+        `^${escape(
+          path.resolve(__dirname, 'node_modules', 'tuya-panel-kit')
+        )}\\/.*\\/node_modules.*$`
       ),
     ]);
   },
