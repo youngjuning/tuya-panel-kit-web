@@ -85,9 +85,10 @@
     "react-native-reanimated": "1.13.0",
     "react-native-safe-area-context": "3.1.7",
     "react-native-screens": "2.10.1",
-    "react-native-svg": "5.5.1",
+    "react-native-svg": "https://registry.npmjs.org/svgs/-/svgs-1.0.0.tgz",
     "style-equal": "^1.0.0",
-    "styled-components": "^3.4.10"
+    "styled-components": "^3.4.10",
+    "svgs": "^4.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.3.2",
@@ -123,9 +124,9 @@
     "standard-version": "^5.0.2"
   },
   "peerDependencies": {
+    "@types/tuya-panel-kit": "*",
     "react": "16.8.3",
     "react-native": "0.59.10",
-    "react-native-svg": "5.5.1",
-    "@types/tuya-panel-kit": "*"
+    "react-native-svg": "5.5.1"
   }
 }
