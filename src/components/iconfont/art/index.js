@@ -1,7 +1,8 @@
 /* eslint-disable no-plusplus */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, ART, Platform, View, AppState, ScrollView } from 'react-native';
+import { StyleSheet, Platform, View, AppState, ScrollView } from 'react-native';
+import ART from 'react-art';
 import DefaultSvgs from './defaultSvg';
 
 const ReactNativeVersion = require('react-native/Libraries/Core/ReactNativeVersion');
