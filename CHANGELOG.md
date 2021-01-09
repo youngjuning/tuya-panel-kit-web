@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.1-rc.0](https://github.com/tuya/tuya-panel-kit/compare/v4.2.0...v4.2.1-rc.0) (2021-01-09)
+
+### Bug Fixes
+
+- remove react-native-gesture-handler ([429e93d](https://github.com/tuya/tuya-panel-kit/commit/429e93d766321aeaa7dcacb0abe6460801069145))
+
+### Features
+
+- 尝试支持 react-navigation web ([c38c2bb](https://github.com/tuya/tuya-panel-kit/commit/c38c2bbb6eec69da9406fdca609d738379aaefdb))
+
 # [4.2.0](https://github.com/tuya/tuya-panel-kit/compare/v4.1.0...v4.2.0) (2021-01-07)
 
 ### Bug Fixes

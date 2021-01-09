@@ -1,6 +1,6 @@
 {
   "name": "tuya-panel-kit-web",
-  "version": "4.2.0",
+  "version": "4.2.1-rc.0",
   "description": "a functional component library for developing tuya device panels! for web",
   "keywords": [
     "tuya",
