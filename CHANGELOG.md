@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.8](https://github.com/tuya/tuya-panel-kit/compare/v4.2.7...v4.2.8) (2021-01-09)
+
+### Bug Fixes
+
+- use react-art ([a20dac5](https://github.com/tuya/tuya-panel-kit/commit/a20dac57d5c41aed89c6f027407b205fdcb29d0c))
+
 ## [4.2.7](https://github.com/tuya/tuya-panel-kit/compare/v4.2.6...v4.2.7) (2021-01-09)
 
 ## [4.2.6](https://github.com/tuya/tuya-panel-kit/compare/v4.2.5...v4.2.6) (2021-01-09)
