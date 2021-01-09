@@ -10,7 +10,7 @@ import TYNativeModules, { getRssi } from '../api';
 import AnimatedModal from '../detect-net-modal';
 import Strings from '../../i18n/strings';
 import { RatioUtils, CoreUtils } from '../../../utils';
-import { Navigator } from '../../../react-native-deprecated-custom-components/dist/CustomComponents';
+import { Navigator } from '../../../react-native-deprecated-custom-components/CustomComponents';
 
 export const moreIcon =
   'M353.152 237.76a52.736 52.736 0 0 0 1.28 75.776l210.432 196.352-204.16 202.944a52.928 52.928 0 0 0-0.64 74.496 51.712 51.712 0 0 0 73.6 0.512l230.144-229.568a64 64 0 0 0-0.256-90.88l-232.96-229.888a54.912 54.912 0 0 0-77.44 0.256z';
