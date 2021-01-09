@@ -334,25 +334,6 @@ const NavigatorBreadcrumbNavigationBar = (function(_React$Component) {
   ]);
   return NavigatorBreadcrumbNavigationBar;
 })(_react2.default.Component);
-NavigatorBreadcrumbNavigationBar.propTypes = {
-  navigator: PropTypes.shape({
-    push: PropTypes.func,
-    pop: PropTypes.func,
-    replace: PropTypes.func,
-    popToRoute: PropTypes.func,
-    popToTop: PropTypes.func,
-  }),
-  routeMapper: PropTypes.shape({
-    rightContentForRoute: PropTypes.func,
-    titleContentForRoute: PropTypes.func,
-    iconForRoute: PropTypes.func,
-  }),
-  navState: PropTypes.shape({
-    routeStack: PropTypes.arrayOf(PropTypes.object),
-    presentedIndex: PropTypes.number,
-  }),
-  style: _reactNative.ViewPropTypes.style,
-};
 NavigatorBreadcrumbNavigationBar.Styles = NavigatorBreadcrumbNavigationBarStyles;
 var styles = _reactNative.StyleSheet.create({
   breadCrumbContainer: {

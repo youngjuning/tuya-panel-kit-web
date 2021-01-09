@@ -90,17 +90,6 @@ const styles = _reactNative.StyleSheet.create({
 const GESTURE_ACTIONS = ['pop', 'jumpBack', 'jumpForward'];
 const Navigator = createReactClass({
   displayName: 'Navigator',
-  propTypes: {
-    configureScene: PropTypes.func,
-    renderScene: PropTypes.func.isRequired,
-    initialRoute: PropTypes.object,
-    initialRouteStack: PropTypes.arrayOf(PropTypes.object),
-    onWillFocus: PropTypes.func,
-    onDidFocus: PropTypes.func,
-    navigationBar: PropTypes.node,
-    navigator: PropTypes.object,
-    sceneStyle: _reactNative.ViewPropTypes.style,
-  },
   statics: {
     BreadcrumbNavigationBar: NavigatorBreadcrumbNavigationBar,
     NavigationBar: NavigatorNavigationBar,
@@ -758,7 +747,7 @@ const Navigator = createReactClass({
   },
   popToRoute: function popToRoute(route) {
     const indexOfRoute = this.state.routeStack.indexOf(route);
-    invariant(indexOfRoute !== -1, "Calling popToRoute for a route that doesn't exist!");
+    invariant(indexOfRoute !== -1, 'Calling popToRoute for a route that doesn\'t exist!');
     const numToPop = this.state.presentedIndex - indexOfRoute;
     this.popN(numToPop);
   },

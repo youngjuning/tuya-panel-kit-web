@@ -24,7 +24,7 @@ function _classCallCheck(instance, Constructor) {
 }
 function _possibleConstructorReturn(self, call) {
   if (!self) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    throw new ReferenceError('this hasn\'t been initialised - super() hasn\'t been called');
   }
   return call && (typeof call === 'object' || typeof call === 'function') ? call : self;
 }
@@ -218,24 +218,10 @@ const NavigatorNavigationBar = (function(_React$Component) {
   ]);
   return NavigatorNavigationBar;
 })(React.Component);
-NavigatorNavigationBar.propTypes = {
-  navigator: PropTypes.object,
-  routeMapper: PropTypes.shape({
-    Title: PropTypes.func.isRequired,
-    LeftButton: PropTypes.func.isRequired,
-    RightButton: PropTypes.func.isRequired,
-  }).isRequired,
-  navState: PropTypes.shape({
-    routeStack: PropTypes.arrayOf(PropTypes.object),
-    presentedIndex: PropTypes.number,
-  }),
-  navigationStyles: PropTypes.object,
-  style: _reactNative.ViewPropTypes.style,
-};
+
 NavigatorNavigationBar.Styles = NavigatorNavigationBarStyles;
 NavigatorNavigationBar.StylesAndroid = NavigatorNavigationBarStylesAndroid;
 NavigatorNavigationBar.StylesIOS = NavigatorNavigationBarStylesIOS;
-NavigatorNavigationBar.defaultProps = { navigationStyles: NavigatorNavigationBarStyles };
 var styles = _reactNative.StyleSheet.create({
   navBarContainer: {
     position: 'absolute',
