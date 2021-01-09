@@ -12,7 +12,6 @@ import {
 } from 'react-native';
 import { NavigationContainer, useNavigation, useNavigationState } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import 'react-native-gesture-handler';
 import { TransitionPresets } from './TransitionPresets';
 import { TYSdk } from '../../../TYNativeApi';
 
