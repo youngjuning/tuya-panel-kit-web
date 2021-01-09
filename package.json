@@ -1,7 +1,7 @@
 {
-  "name": "tuya-panel-kit",
+  "name": "tuya-panel-kit-web",
   "version": "4.2.0",
-  "description": "a functional component library for developing tuya device panels!",
+  "description": "a functional component library for developing tuya device panels! for web",
   "keywords": [
     "tuya",
     "react-native",
