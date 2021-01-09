@@ -78,6 +78,7 @@
     "color": "^0.11.1",
     "events": "^1.1.1",
     "hoist-non-react-statics": "^3.3.0",
+    "immutable": "^4.0.0-rc.12",
     "prop-types": "^15.6.1",
     "react-addons-shallow-compare": "^15.6.2",
     "react-art": "^17.0.1",

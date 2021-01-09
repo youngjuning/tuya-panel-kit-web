@@ -5,7 +5,12 @@ import { StyleSheet, Platform, View, AppState, ScrollView } from 'react-native';
 import ART from 'react-art';
 import DefaultSvgs from './defaultSvg';
 
-const ReactNativeVersion = require('react-native/Libraries/Core/ReactNativeVersion');
+const ReactNativeVersion = {
+  major: 0,
+  minor: 59,
+  patch: 10,
+  prerelease: null,
+};
 
 const { Surface, Shape } = ART;
 let ShapeKey = 0;
