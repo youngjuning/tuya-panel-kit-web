@@ -1,7 +1,7 @@
 /* eslint-disable no-extra-boolean-cast */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Navigator } from 'react-native-deprecated-custom-components';
+import { Navigator } from '../../../../react-native-deprecated-custom-components/dist/CustomComponents';
 import { View, StyleSheet, UIManager, BackHandler, Platform, AppState, Text } from 'react-native';
 import { TYSdk } from '../../../TYNativeApi';
 import MaskView from '../../modal/portalOut';
