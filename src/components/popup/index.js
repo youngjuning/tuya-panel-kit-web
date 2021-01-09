@@ -68,7 +68,7 @@ const Popup = {
   },
 
   toast: (props, modalOpts) => {
-    if (__DEV__) {
+    if (process.env.NODE_ENV === 'development') {
       console.warn('Popup.toast 已废弃，可能将会在后续版本中移除，请考虑使用 Notification.show');
     }
     const noticeProps = {

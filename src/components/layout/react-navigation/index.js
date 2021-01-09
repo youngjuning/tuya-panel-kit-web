@@ -161,7 +161,7 @@ export default function createNavigator({ router, screenOptions }) {
         currentPage,
         referrerPage,
       };
-      if (__DEV__) {
+      if (process.env.NODE_ENV === 'development') {
         console.log('====RN Tracker info====', attributes);
       } else {
         this.eventManager.event(this.trackName, attributes);
