@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.10](https://github.com/tuya/tuya-panel-kit/compare/v4.2.9...v4.2.10) (2021-01-09)
+
+### Bug Fixes
+
+- rename png ([a584294](https://github.com/tuya/tuya-panel-kit/commit/a584294c41de60afdd79f726d97e1518d2f16005))
+
 ## [4.2.9](https://github.com/tuya/tuya-panel-kit/compare/v4.2.8...v4.2.9) (2021-01-09)
 
 ### Bug Fixes
