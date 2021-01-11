@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.14](https://github.com/tuya/tuya-panel-kit/compare/v4.2.13...v4.2.14) (2021-01-11)
+
+### Bug Fixes
+
+- props undefined ([e72d1d6](https://github.com/tuya/tuya-panel-kit/commit/e72d1d63a74bc3551d8833495662587cc7be00db))
+
 ## [4.2.13](https://github.com/tuya/tuya-panel-kit/compare/v4.2.12...v4.2.13) (2021-01-09)
 
 ### Bug Fixes
