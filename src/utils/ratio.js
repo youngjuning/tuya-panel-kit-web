@@ -48,64 +48,46 @@ const getDimension = () => {
  */
 export default {
   get hRatio() {
-    const { width: actualWidth } = getDimension();
-    return actualWidth / baseWidth;
+    return 1;
   },
   get vRatio() {
-    const { height: actualHeight } = getDimension();
-    return actualHeight / baseHeight;
+    return 1;
   },
   get ratio() {
-    const actualX = Math.sqrt(height * height + width * width);
-    const { width: actualWidth } = getDimension();
-    let actualRatio = actualX / baseX;
-    if (baseWidth === actualWidth && actualRatio > 1) {
-      actualRatio = 1;
-    }
-    return actualRatio;
+    return 1;
   },
   get width() {
-    return getDimension().width;
+    return 375;
   },
   get height() {
-    return getDimension().height;
+    return 667;
   },
   get winWidth() {
-    return getDimension().width;
+    return 375;
   },
   get winHeight() {
-    return getDimension().height;
+    return 375;
   },
   get viewWidth() {
-    return getDimension().width;
+    return 375;
   },
   get viewHeight() {
-    return getDimension().height - (isIos ? (isIphoneX ? 88 : 64) : 56 + statusHeight);
+    return 667 - (64 + 20);
   },
-  convertX: number => {
-    const { width: actualWidth } = getDimension();
-    const hRatio = actualWidth / baseWidth;
-    return number * hRatio;
+  convertX: () => {
+    return 1;
   },
-  convertY: number => {
-    const { height: actualHeight } = getDimension();
-    const vRatio = actualHeight / baseHeight;
-    return number * vRatio;
+  convertY: () => {
+    return 1;
   },
-  convert: number => {
-    const actualX = Math.sqrt(height * height + width * width);
-    const { width: actualWidth } = getDimension();
-    let actualRatio = actualX / baseX;
-    if (baseWidth === actualWidth && actualRatio > 1) {
-      actualRatio = 1;
-    }
-    return number * actualRatio;
+  convert: () => {
+    return 1;
   },
   get isSmallW() {
-    return getDimension().width < 375;
+    return false;
   },
   get isSmallH() {
-    return getDimension().height < 667;
+    return false;
   },
   isIos,
   isIphoneX,
