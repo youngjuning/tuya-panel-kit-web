@@ -1,13 +1,16 @@
 import { Dimensions, Platform, StatusBar } from 'react-native';
 
-const { height, width } = Dimensions.get('window');
 const baseHeight = 667;
+const height = 667;
+const width = 375;
 const baseWidth = 375;
 const baseX = Math.sqrt(baseHeight * baseHeight + baseWidth * baseWidth);
 const x = Math.sqrt(height * height + width * width);
 const statusHeight = StatusBar.currentHeight || 0;
-export const isIos = Platform.OS === 'ios';
-export const isWeb = Platform.OS === 'web';
+// export const isIos = Platform.OS === 'ios';
+// export const isWeb = Platform.OS === 'web';
+export const isIos = true; // 为了在 Web 上更好的模拟 RN
+export const isWeb = false;
 export const isIphoneX = isIos && height >= 812;
 export const HRatio = width / baseWidth;
 export const VRatio = height / baseHeight;
