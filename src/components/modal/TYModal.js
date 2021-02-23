@@ -164,6 +164,14 @@ class TYModal extends React.Component {
           const childStyle = [
             maskContainer,
             onlyLastModalVisible && { display: idx === activeIdx ? 'flex' : 'none' },
+            // CodeSanbox Mask 正常展示
+            {
+              width: 375,
+              height: 667,
+              position: 'absolute',
+              top: -84,
+              left: -1,
+            },
           ];
           let modalChild = child;
           if (!Array.isArray(child)) {
