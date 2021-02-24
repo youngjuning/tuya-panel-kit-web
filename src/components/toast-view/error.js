@@ -62,7 +62,18 @@ class Error extends React.PureComponent {
       iconfontStyle,
       ...props
     } = this.props;
-    const toastPropNames = Object.keys(Toast.propTypes);
+    const toastPropNames = [
+      'style',
+      'contentStyle',
+      'textStyle',
+      'imageStyle',
+      'text',
+      'show',
+      'onFinish',
+      'showPosition',
+      'image',
+      'children',
+    ];
     const toastProps = pick(props, toastPropNames);
     const iconProps = omit(props, toastPropNames);
     return (
