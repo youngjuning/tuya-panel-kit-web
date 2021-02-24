@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.17](https://github.com/tuya/tuya-panel-kit/compare/v4.2.16...v4.2.17) (2021-02-24)
+
+### Bug Fixes
+
+- **Modal:** Mask show ([685cad6](https://github.com/tuya/tuya-panel-kit/commit/685cad67206e425ee9a1b985ab92413dccc11129))
+- **Modal:** Mask show ([c63ac13](https://github.com/tuya/tuya-panel-kit/commit/c63ac13fa9f0a2d20af6c734d48a5a12a055d338))
+
 ## [4.2.16](https://github.com/tuya/tuya-panel-kit/compare/v4.2.15...v4.2.16) (2021-02-20)
 
 ## [4.2.15](https://github.com/tuya/tuya-panel-kit/compare/v4.2.14...v4.2.15) (2021-02-20)
