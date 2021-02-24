@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.18](https://github.com/tuya/tuya-panel-kit/compare/v4.2.17...v4.2.18) (2021-02-24)
+
+### Bug Fixes
+
+- **Toast:** fix get PropTypes ([9cfc040](https://github.com/tuya/tuya-panel-kit/commit/9cfc04064731d401b484eddf0d804ef02a7a85a4))
+
 ## [4.2.17](https://github.com/tuya/tuya-panel-kit/compare/v4.2.16...v4.2.17) (2021-02-24)
 
 ### Bug Fixes
