@@ -74,14 +74,14 @@ export default {
   get viewHeight() {
     return 667 - (64 + 20);
   },
-  convertX: () => {
-    return 1;
+  convertX: number => {
+    return number;
   },
-  convertY: () => {
-    return 1;
+  convertY: number => {
+    return number;
   },
-  convert: () => {
-    return 1;
+  convert: number => {
+    return number;
   },
   get isSmallW() {
     return false;

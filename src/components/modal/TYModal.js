@@ -168,9 +168,6 @@ class TYModal extends React.Component {
             {
               width: 375,
               height: 667,
-              position: 'absolute',
-              top: -84,
-              left: -1,
             },
           ];
           let modalChild = child;
@@ -227,9 +224,9 @@ class TYModal extends React.Component {
 const styles = StyleSheet.create({
   maskContainer: {
     position: 'absolute',
-    top: 0,
+    top: -1,
     bottom: 0,
-    left: 0,
+    left: -1,
     right: 0,
   },
 });
