@@ -12,7 +12,8 @@ import {
 } from 'react-native';
 import { NavigationContainer, useNavigation, useNavigationState } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { TransitionPresets } from './TransitionPresets';
+import 'react-native-gesture-handler';
+import TransitionPresets from './TransitionPresets';
 import { TYSdk } from '../../../TYNativeApi';
 
 import MaskView from '../../modal/portalOut';
@@ -80,6 +81,10 @@ const Stack = createStackNavigator();
 
 export default function createNavigator({ router, screenOptions }) {
   const defaultScreenOptions = {
+    cardOverlay: () => {
+      return <View style={{ flex: 1, backgroundColor: 'rgba(0,0,0,0.3)' }} />;
+    },
+    cardOverlayEnabled: true,
     ...TransitionPresets.SlideFromRightIOS,
   };
 
@@ -161,7 +166,7 @@ export default function createNavigator({ router, screenOptions }) {
         currentPage,
         referrerPage,
       };
-      if (process.env.NODE_ENV === 'development') {
+      if (__DEV__) {
         console.log('====RN Tracker info====', attributes);
       } else {
         this.eventManager.event(this.trackName, attributes);
@@ -283,7 +288,9 @@ export default function createNavigator({ router, screenOptions }) {
             return (
               <RouteIntercept onBlur={this._onBlur} onFocus={this._onFocus}>
                 {() => {
-                  const contentLayout = <Element navigation={navigation} route={navRoute} />;
+                  const contentLayout = (
+                    <Element navigation={navigation} route={{ ...navRoute, ...route }} />
+                  );
 
                   return (
                     <FullView
